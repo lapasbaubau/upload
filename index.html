@@ -22,5 +22,14 @@
 
   <!-- JS eksternal -->
   <script src="script.js"></script>
+
+  <script>
+    // Refresh iframe setiap 2 menit
+    setInterval(() => {
+      const iframe = document.getElementById('uploadFrame');
+      iframe.src = iframe.src;
+    }, 120000); // 120000 ms = 2 menit
+  </script>
+
 </body>
 </html>
